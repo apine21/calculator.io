@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="master.css"/>
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="parent">
+        <span class="time">
+            <i class="fas fa-battery-empty" id="batterie"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="data">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <span id="time"></span>
+        </span>
+        <input type="text" name="" id="result" value="0" readonly>
+        <div class="keys">
+            <button class="color" onclick="allClear()">AC</button>
+            <button class="color" onclick="plusMinus()">+/-</button>
+            <input type="button" value="%" id="sign"  class="color"/>
+             <button class="operation" value="/" onclick="division()">÷</button>
+            <input type="button" value="7" id="sign"/>
+            <input type="button" value="8" id="sign"/>
+            <input type="button" value="9" id="sign"/>
+            <button class="operation" value="*" onclick="multi()">×</button>
+            <input type="button" value="4" id="sign"/>
+            <input type="button" value="5" id="sign"/>
+            <input type="button" value="6" id="sign"/>
+            <button class="operation" value="-" onclick="mince()">-</button>
+            <input type="button" value="1" id="sign"/>
+            <input type="button" value="2" id="sign"/>
+            <input type="button" value="3" id="sign"/>
+            <button class="operation" value="+" onclick="sum()">+</button>
+            <input type="button" value="0" id="zero"/>
+            <input type="button" value="."/>
+            <button class="operation" onclick="equal()">=</button>
+        </div>
+        <p>Made By Kaci Oussama With &lt;3</p>
+    </div>
+    <footer>
+    
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
